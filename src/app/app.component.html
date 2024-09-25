@@ -1,3 +1,10 @@
 <app-header></app-header>
-<app-user-profile></app-user-profile>
+<app-event-example></app-event-example>
+<!-- app.component.html -->
+<h1>Angular Components Example</h1>
+<app-two-way-binding></app-two-way-binding>  <!-- Use the new component -->
+<p>Current User: {{ userName }}</p>
+<button (click)="changeUserName()">Change User Name</button>
+<app-user-display></app-user-display>
+<app-child [inputMessage]="parentMessage"></app-child>
 <app-footer></app-footer>
