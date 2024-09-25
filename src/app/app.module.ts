@@ -14,6 +14,7 @@ import { TwoWayBindingComponent } from './two-way-binding/two-way-binding.compon
 import { UserDisplayComponent } from './user-display/user-display.component';
 import { SignalCounterComponent } from './signal-counter/signal-counter.component';
 import { ChildComponent } from './child/child.component';
+import { CounterComponent } from './counter/counter.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { ChildComponent } from './child/child.component';
     TwoWayBindingComponent,
     UserDisplayComponent,
     SignalCounterComponent,
-    ChildComponent
+    ChildComponent,
+    CounterComponent
   ],
   imports: [
     BrowserModule,

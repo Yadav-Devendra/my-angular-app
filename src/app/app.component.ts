@@ -8,6 +8,11 @@ import { UserService } from './user.service';
 })
 export class AppComponent {
   parentMessage: string = 'Hello from Parent!';
+  messageFromChild: string = '';
+
+  receiveMessage(message: string) {
+    this.messageFromChild = message;
+  }
 
   title = 'my-angular-app';
   userName: string = '';

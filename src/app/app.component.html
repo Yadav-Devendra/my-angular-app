@@ -6,5 +6,7 @@
 <p>Current User: {{ userName }}</p>
 <button (click)="changeUserName()">Change User Name</button>
 <app-user-display></app-user-display>
-<app-child [inputMessage]="parentMessage"></app-child>
+<app-child [inputMessage]="parentMessage" (outputMessage)="receiveMessage($event)"></app-child>
+<p>Message from Child: {{ messageFromChild }}</p>
+<app-counter></app-counter>
 <app-footer></app-footer>
